@@ -17,10 +17,10 @@ public class MainFrame extends JFrame{
     public MainFrame(Fichier fichier) {
         this.fichier = fichier;
         this.setTitle("csv reader");
-		this.setSize(this.windowsWidth, this.WindowsHeight);
-		this.setLocationRelativeTo(null);
-		this.setResizable(true);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setSize(this.windowsWidth, this.WindowsHeight);
+        this.setLocationRelativeTo(null);
+        this.setResizable(true);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JTable tableau = new JTable(this.fichier.getCorps(), this.fichier.getEntete());
         tableau.setAutoCreateRowSorter(true);
